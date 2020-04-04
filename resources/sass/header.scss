@@ -1,6 +1,18 @@
-header {
+#header {
     .logo {
-        width: 100px;
-        height: 60px;
+        width: 35px;
+        height: 35px;
+    }
+    .navbar-light {
+        background-color: $black;
+        .navbar-brand {
+            color: $white;
+        }
+    }
+    .nav-link {
+        color: $white;
+    }
+    .nav-link.active {
+        color: $orange;
     }
 }

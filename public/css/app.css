@@ -1,0 +1,53 @@
+body {
+  background-color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: #F2F2F2;
+  }
+}
+
+body *:focus {
+  outline: none;
+}
+
+body .no-pointer {
+  pointer-events: none;
+}
+
+body .form-control {
+  border: 0;
+  border-style: none;
+  outline: none;
+}
+
+body .form-control:focus {
+  box-shadow: none;
+}
+
+body select:focus {
+  outline: none;
+}
+
+#header .logo {
+  width: 35px;
+  height: 35px;
+}
+
+#header .navbar-light {
+  background-color: #101010;
+}
+
+#header .navbar-light .navbar-brand {
+  color: #ffffff;
+}
+
+#header .nav-link {
+  color: #ffffff;
+}
+
+#header .nav-link.active {
+  color: #FF8700;
+}
+

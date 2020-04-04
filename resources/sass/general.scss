@@ -1,0 +1,49 @@
+body{
+    background-color: #fff;
+
+    @include mq('tablet'){
+        background-color: #F2F2F2;
+    }
+
+    @include mq('tablet-large') {
+    }
+
+    *:focus {
+        outline: none;
+    }
+
+    .no-pointer{
+        pointer-events: none;
+    }
+
+    .form-control{
+
+        border: 0;
+        border-style: none;
+        outline: none;
+        &:focus{
+            box-shadow: none;
+        }
+
+    }
+
+    select{
+        &:focus{
+            outline: none;
+        }
+    }
+
+
+}
+
+@include mq('desktop-small') {
+
+}
+
+@include mq('tablet') {
+
+}
+
+@include mq('desktop') {
+
+}
