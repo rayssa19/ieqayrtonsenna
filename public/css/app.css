@@ -65,3 +65,19 @@ body .section-home .background {
   color: #FF8700;
 }
 
+.btn-orange {
+  background-color: #FF8700;
+  border-radius: 10px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  width: 80px;
+}
+
+.btn-orange:hover {
+  border: 2px solid #FF8700;
+  background: none;
+}
+

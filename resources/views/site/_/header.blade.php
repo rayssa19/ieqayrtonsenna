@@ -8,10 +8,12 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+            <div class="navbar-nav align-items-center">
                 <a class="nav-item nav-link active" href="#">Home</a>
-                <a class="nav-item nav-link" href="#">Features</a>
-                <a class="nav-item nav-link" href="#">Pricing</a>
+                <a class="nav-item nav-link" href="#">Galeria</a>
+                <a class="nav-item nav-link" href="#">Célula</a>
+                <a class="nav-item nav-link" href="#">Cultos</a>
+                <a class="nav-item nav-link btn-orange" href="#">Login</a>
             </div>
         </div>
     </nav>
