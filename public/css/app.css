@@ -1,3 +1,41 @@
+#header .logo {
+  width: 35px;
+  height: 35px;
+}
+
+#header .navbar-light {
+  background-color: #101010;
+}
+
+#header .navbar-light .navbar-brand {
+  color: #ffffff;
+}
+
+#header .nav-link {
+  color: #ffffff;
+}
+
+#header .nav-link.active {
+  color: #FF8700;
+}
+
+.btn-orange {
+  background-color: #FF8700;
+  border-radius: 10px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  width: 80px;
+  transition: 0.5s;
+}
+
+.btn-orange:hover {
+  border: 2px solid #FF8700;
+  background: none;
+}
+
 body {
   background-color: #fff;
 }
@@ -31,6 +69,7 @@ body select:focus {
 }
 
 body .section-home {
+  color: #ffffff;
   background-image: url("/images/church-2.jpg");
   height: 500px;
   background-repeat: no-repeat;
@@ -44,40 +83,12 @@ body .section-home .background {
   position: absolute;
 }
 
-#header .logo {
-  width: 35px;
-  height: 35px;
-}
-
-#header .navbar-light {
-  background-color: #101010;
-}
-
-#header .navbar-light .navbar-brand {
-  color: #ffffff;
-}
-
-#header .nav-link {
-  color: #ffffff;
-}
-
-#header .nav-link.active {
-  color: #FF8700;
-}
-
-.btn-orange {
-  background-color: #FF8700;
-  border-radius: 10px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 100%;
-  width: 80px;
-}
-
-.btn-orange:hover {
-  border: 2px solid #FF8700;
-  background: none;
+body .section-home .background span {
+  display: block;
+  width: 60px;
+  background-color: #ffffff;
+  height: 5px;
+  text-align: center;
+  margin: 0 45%;
 }
 
