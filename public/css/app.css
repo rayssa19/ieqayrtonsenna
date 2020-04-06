@@ -38,6 +38,7 @@
 
 body {
   background-color: #fff;
+  font-family: "Georgia", "Book Antiqua", Palatino, serif;
 }
 
 @media only screen and (min-width: 768px) {
@@ -68,7 +69,7 @@ body select:focus {
   outline: none;
 }
 
-body .section-home {
+.section-home {
   color: #ffffff;
   background-image: url("/images/church-2.jpg");
   height: 500px;
@@ -76,19 +77,47 @@ body .section-home {
   background-size: cover;
 }
 
-body .section-home .background {
+.section-home .background {
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 500px;
   position: absolute;
 }
 
-body .section-home .background span {
+.section-home .background span {
   display: block;
   width: 60px;
   background-color: #ffffff;
   height: 5px;
   text-align: center;
   margin: 0 45%;
+}
+
+.section-symbols .symbols {
+  padding: 5px;
+  width: 220px;
+  margin: 10px;
+  max-width: 20%;
+}
+
+.section-symbols .img-symbols {
+  margin: 5px;
+  width: 200px;
+}
+
+.section-symbols .red {
+  border: 3px solid #e32414;
+}
+
+.section-symbols .yellow {
+  border: 3px solid #fec448;
+}
+
+.section-symbols .blue {
+  border: 3px solid #005a8c;
+}
+
+.section-symbols .purple {
+  border: 3px solid #9d3f76;
 }
 

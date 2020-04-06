@@ -10,26 +10,28 @@
                 </div>
             </div>
         </div>
-        <div class="section-symbols">
-            <div class="row">
-                <div class="col-md-3 symbols">
-                    <img src="../images/jesus-salva.png" alt="">
-                    Jesus Salva
-                </div>
+        <div class="section-symbols mt-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-3 symbols red">
+                        <img class="img-symbols" src="../images/jesus-salva.png" alt="">
+                        <p class="text-center font-weight-bold mt-3">Jesus Salva</p>
+                    </div>
 
-                <div class="col-md-3 symbols">
-                    <img src="../images/jesus-batiza.png" alt="">
-                    Jesus batiza
-                </div>
+                    <div class="col-md-3 symbols yellow">
+                        <img class="img-symbols" src="../images/jesus-batiza.png" alt="">
+                        <p class="text-center font-weight-bold mt-3">Jesus batiza</p>
+                    </div>
 
-                <div class="col-md-3 symbols">
-                    <img src="../images/jesus-cura.png" alt="">
-                    Jesus cura
-                </div>
+                    <div class="col-md-3 symbols blue">
+                        <img class="img-symbols" src="../images/jesus-cura.png" alt="">
+                        <p class="text-center font-weight-bold mt-3">Jesus cura</p>
+                    </div>
 
-                <div class="col-md-3 symbols">
-                    <img src="../images/jesus-voltara.png" alt="">
-                    Jesus voltará
+                    <div class="col-md-3 symbols purple">
+                        <img class="img-symbols" src="../images/jesus-voltara.png" alt="">
+                        <p class="text-center font-weight-bold mt-3">Jesus voltará</p>
+                    </div>
                 </div>
             </div>
         </div>
