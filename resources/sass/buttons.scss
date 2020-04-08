@@ -1,6 +1,9 @@
 .btn-orange {
     background-color: $orange;
     border-radius: 10px;
+    color: $white;
+    border: none;
+    cursor: pointer;
     height: 30px;
     display: flex;
     align-items: center;
@@ -12,4 +15,12 @@
 .btn-orange:hover {
     border: 2px solid $orange;
     background: none;
+    color: $white;
+}
+
+.form-register {
+    .btn-orange {
+        height: 50px;
+        width: 100px;
+    }
 }

@@ -37,6 +37,53 @@ body{
 
 }
 
+#header {
+    .logo {
+        width: 35px;
+        height: 35px;
+    }
+    .navbar-light {
+        background-color: $black;
+        .navbar-brand {
+            color: $white;
+        }
+    }
+    .nav-link {
+        color: $white;
+    }
+    .nav-link.active {
+        color: $orange;
+    }
+}
+
+#footer {
+    background-color: $black;
+    color: $white;
+
+    .circle-icons {
+        padding: 10px;
+        font-size: 18px;
+        width: 25%;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 5px;
+        background: #f0e9e9;
+        color: #fff;
+    }
+
+    .circle-icons:hover {
+        background: #ccc;
+        color: #fff;
+        opacity: 0.7;
+
+    }
+    .circle-icons:before {
+        margin-right: 10px;
+    }
+
+}
+
 .section-home {
     color: #ffffff;
     background-image: url('/images/church-2.jpg');
