@@ -3,7 +3,7 @@
     <div class="flex-center position-ref full-height">
         <div class="section-home">
             <div class="container">
-                <form>
+                <form class="form-register">
                     <div class="form-group">
                         <label for="name">Célula:</label>
                         <input type="name" class="form-control" id="name" placeholder="">
@@ -30,9 +30,8 @@
                     </div>
 
                     <div class="d-flex justify-content-center">
-                        <button type="submit" class="btn">ENVIAR</button>
+                        <button type="submit" class="btn mb-2">ENVIAR</button>
                     </div>
-
 
                 </form>
             </div>

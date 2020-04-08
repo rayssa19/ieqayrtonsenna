@@ -36,6 +36,12 @@
   background: none;
 }
 
+.form-register {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
 body {
   background-color: #fff;
   font-family: "Georgia", "Book Antiqua", Palatino, serif;
@@ -72,7 +78,7 @@ body select:focus {
 .section-home {
   color: #ffffff;
   background-image: url("/images/church-2.jpg");
-  height: 500px;
+  min-height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
 }
