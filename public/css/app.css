@@ -1,27 +1,9 @@
-#header .logo {
-  width: 35px;
-  height: 35px;
-}
-
-#header .navbar-light {
-  background-color: #101010;
-}
-
-#header .navbar-light .navbar-brand {
-  color: #ffffff;
-}
-
-#header .nav-link {
-  color: #ffffff;
-}
-
-#header .nav-link.active {
-  color: #FF8700;
-}
-
 .btn-orange {
   background-color: #FF8700;
   border-radius: 10px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
   height: 30px;
   display: flex;
   align-items: center;
@@ -34,6 +16,12 @@
 .btn-orange:hover {
   border: 2px solid #FF8700;
   background: none;
+  color: #ffffff;
+}
+
+.form-register .btn-orange {
+  height: 50px;
+  width: 100px;
 }
 
 .form-register {
@@ -73,6 +61,54 @@ body .form-control:focus {
 
 body select:focus {
   outline: none;
+}
+
+#header .logo {
+  width: 35px;
+  height: 35px;
+}
+
+#header .navbar-light {
+  background-color: #101010;
+}
+
+#header .navbar-light .navbar-brand {
+  color: #ffffff;
+}
+
+#header .nav-link {
+  color: #ffffff;
+}
+
+#header .nav-link.active {
+  color: #FF8700;
+}
+
+#footer {
+  background-color: #101010;
+  color: #ffffff;
+}
+
+#footer .circle-icons {
+  padding: 10px;
+  font-size: 18px;
+  width: 25%;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 5px;
+  background: #f0e9e9;
+  color: #fff;
+}
+
+#footer .circle-icons:hover {
+  background: #ccc;
+  color: #fff;
+  opacity: 0.7;
+}
+
+#footer .circle-icons:before {
+  margin-right: 10px;
 }
 
 .section-home {

@@ -30,7 +30,7 @@
                     </div>
 
                     <div class="d-flex justify-content-center">
-                        <button type="submit" class="btn mb-2">ENVIAR</button>
+                        <button type="submit" class="btn-orange mb-2">Enviar</button>
                     </div>
 
                 </form>
