@@ -8,13 +8,13 @@ use App\Lider;
 class LiderController extends Controller
 {
     public function index() {
-        $lider = Lider::all();
+        $leader = Lider::all();
         $total = Lider::all()->count();
-        return view('list-lider', compact('lider', 'total'));
+        return view('register-leader', compact('leader', 'total'));
     }
 
     public function create() {
-        return view('include-lider');
+        return view('register-leader');
     }
 
     public function store(Request $request) {
@@ -34,7 +34,7 @@ class LiderController extends Controller
 
     public function edit($id) {
         $leader = Lider::findOrFail($id);
-        return view('alter-lider', compact('leader'));
+        return view('alter-leader', compact('leader'));
     }
 
     public function update(Request $request, $id) {
