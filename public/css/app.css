@@ -114,7 +114,7 @@ body select:focus {
 .section-home {
   color: #ffffff;
   background-image: url("/images/church-2.jpg");
-  min-height: 500px;
+  min-height: 88vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -122,7 +122,7 @@ body select:focus {
 .section-home .background {
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
-  height: 500px;
+  height: 88vh;
   position: absolute;
 }
 
@@ -139,12 +139,13 @@ body select:focus {
   padding: 5px;
   width: 220px;
   margin: 10px;
-  max-width: 20%;
+  max-width: 40%;
 }
 
 .section-symbols .img-symbols {
-  margin: 5px;
-  width: 200px;
+  margin: 15px auto;
+  width: 120px;
+  display: flex;
 }
 
 .section-symbols .red {
@@ -161,5 +162,25 @@ body select:focus {
 
 .section-symbols .purple {
   border: 3px solid #9d3f76;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-symbols .img-symbols {
+    width: 200px;
+  }
+
+  .section-home {
+    min-height: 75vh;
+  }
+
+  .section-home .background {
+    height: 75vh;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .section-symbols .symbols {
+    max-width: 20%;
+  }
 }
 

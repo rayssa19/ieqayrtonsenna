@@ -87,14 +87,14 @@ body{
 .section-home {
     color: #ffffff;
     background-image: url('/images/church-2.jpg');
-    min-height: 500px;
+    min-height: 88vh;
     background-repeat: no-repeat;
     background-size: cover;
 
     .background {
         background: rgba(0, 0, 0, 0.6);
         width: 100%;
-        height: 500px;
+        height: 88vh;
         position: absolute;
 
         span {
@@ -112,14 +112,14 @@ body{
 .section-symbols {
     .symbols {
         padding: 5px;
-        //border: 3px solid #e3e3e3;
         width: 220px;
         margin: 10px;
-        max-width: 20%;
+        max-width: 40%;
     }
     .img-symbols {
-        margin: 5px;
-        width: 200px;
+        margin: 15px auto;
+        width: 120px;
+        display: flex;
     }
     .red {
         border: 3px solid #e32414;
@@ -142,8 +142,24 @@ body{
 
 @include mq('tablet') {
 
+    .section-symbols .img-symbols {
+        width: 200px;
+    }
+
+    .section-home {
+        min-height: 75vh;
+        .background {
+            height: 75vh;
+        }
+
+    }
+
 }
 
 @include mq('desktop') {
-
+    .section-symbols {
+        .symbols {
+            max-width: 20%;
+        }
+    }
 }
