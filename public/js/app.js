@@ -19278,10 +19278,42 @@ module.exports = function(module) {
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
   \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _components_Validation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/Validation */ "./resources/js/components/Validation.js");
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+
+var App = /*#__PURE__*/function () {
+  function App() {
+    _classCallCheck(this, App);
+
+    this.boot();
+  }
+
+  _createClass(App, [{
+    key: "boot",
+    value: function boot() {
+      new _components_Validation__WEBPACK_IMPORTED_MODULE_0__["default"]();
+    }
+  }]);
+
+  return App;
+}();
+
+$(document).ready(function () {
+  new App();
+});
 
 /***/ }),
 
@@ -19314,6 +19346,69 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/Validation.js":
+/*!***********************************************!*\
+  !*** ./resources/js/components/Validation.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Validation; });
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var Validation = /*#__PURE__*/function () {
+  function Validation() {
+    _classCallCheck(this, Validation);
+
+    this.classForm = $('.form-download-email');
+    this.boot();
+  }
+
+  _createClass(Validation, [{
+    key: "boot",
+    value: function boot() {
+      this.formCelula();
+    }
+  }, {
+    key: "formCelula",
+    value: function formCelula() {
+      $(function () {
+        $("form[name='form-register']").validate({
+          rules: {
+            cell: "required",
+            name: "required",
+            viceleader: "required",
+            host: "required",
+            secretary: "required"
+          },
+          messages: {
+            cell: "Por favor, insira o nome da célula",
+            name: "Por favor, insira o nome do líder",
+            viceleader: "Por favor, insira o nome do vice-líder",
+            host: "Por favor, insira o nome do anfitrião",
+            secretary: "Por favor, insira o nome do secretário(a)"
+          },
+          submitHandler: function submitHandler(form) {
+            form.submit();
+          }
+        });
+      });
+    }
+  }]);
+
+  return Validation;
+}();
+
+
 
 /***/ }),
 

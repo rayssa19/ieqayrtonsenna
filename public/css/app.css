@@ -30,6 +30,10 @@
   padding: 30px;
 }
 
+.form-register .error {
+  color: red;
+}
+
 body {
   background-color: #fff;
   font-family: "Georgia", "Book Antiqua", Palatino, serif;
@@ -133,6 +137,11 @@ body select:focus {
   height: 5px;
   text-align: center;
   margin: 0 45%;
+}
+
+.section-register {
+  background-image: linear-gradient(4deg, #d4d1cf, transparent);
+  min-height: 90%;
 }
 
 .section-symbols .symbols {
