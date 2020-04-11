@@ -87,14 +87,14 @@ body{
 .section-home {
     color: #ffffff;
     background-image: url('/images/church-2.jpg');
-    min-height: 500px;
+    min-height: 88vh;
     background-repeat: no-repeat;
     background-size: cover;
 
     .background {
         background: rgba(0, 0, 0, 0.6);
         width: 100%;
-        height: 500px;
+        height: 88vh;
         position: absolute;
 
         span {
@@ -109,17 +109,22 @@ body{
 
 }
 
+.section-register {
+    background-image: linear-gradient(4deg, #d4d1cf, transparent);
+    min-height: 90%;
+}
+
 .section-symbols {
     .symbols {
         padding: 5px;
-        //border: 3px solid #e3e3e3;
         width: 220px;
         margin: 10px;
-        max-width: 20%;
+        max-width: 40%;
     }
     .img-symbols {
-        margin: 5px;
-        width: 200px;
+        margin: 15px auto;
+        width: 120px;
+        display: flex;
     }
     .red {
         border: 3px solid #e32414;
@@ -136,14 +141,82 @@ body{
 
 }
 
+.section-gallery {
+    .container{	width: 60%;
+        height: 100%;
+        margin: 20px auto;}
+
+    img{	border: none;
+        max-width: 100%;
+    }
+
+
+    ul{	list-style: none;
+        margin-top: 5%;
+        padding: 0;}
+
+    li{		float: left;
+        position: relative;
+        padding: 10px 10px 25px 10px;
+        background: #eee;
+        border: 1px solid #fff;
+        box-shadow: 1px 2px 10px #333;
+        margin-left: 2%;
+        max-width: 28%;
+        min-width: 180px;
+    }
+
+    span{	padding-top: 2%;
+        padding-left: 45%;
+        font-family: 'Century Gothic';
+        font-size: 0.8em;
+        max-width: 28%;
+        min-width: 180px;
+    }
+
+
+    li:nth-child(even){
+        z-index: 0;
+        transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);}
+
+    li:nth-child(odd){
+        z-index: 1;
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);}
+
+    li:hover{
+        z-index: 10;
+        transform: scale(1.3);
+        -webkit-transform: scale(1.3);
+    }
+
+}
+
 @include mq('desktop-small') {
 
 }
 
 @include mq('tablet') {
 
+    .section-symbols .img-symbols {
+        width: 200px;
+    }
+
+    .section-home {
+        min-height: 75vh;
+        .background {
+            height: 75vh;
+        }
+
+    }
+
 }
 
 @include mq('desktop') {
-
+    .section-symbols {
+        .symbols {
+            max-width: 20%;
+        }
+    }
 }

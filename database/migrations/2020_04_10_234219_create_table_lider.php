@@ -13,7 +13,7 @@ class CreateLiderTable extends Migration
      */
     public function up()
     {
-          Schema::create('lider', function (Blueprint $table) {
+        Schema::create('lider', function (Blueprint $table) {
             $table->increments('id');
             $table->string('cell', 30);
             $table->string('name', 30);
@@ -32,6 +32,6 @@ class CreateLiderTable extends Migration
      */
     public function down()
     {
-         Schema::drop('lider');
+        Schema::drop('lider');
     }
 }
